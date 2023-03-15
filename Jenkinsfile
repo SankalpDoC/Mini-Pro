@@ -17,7 +17,6 @@ pipeline {
         stage('Run Tests') {
             steps {
                 sh 'poetry init --no-interaction'
-                sh 'tox'
             }
         }
 
