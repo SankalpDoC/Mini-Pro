@@ -16,13 +16,13 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                sh 'poetry init --no-interaction'
+                sh 'pytest -v TestSciCal.py'
             }
         }
 
         stage('Create Executable') {
             steps {
-                sh 'pyinstaller --onefile calculator.py'
+                sh 'pyinstaller --onefile --name=SciCalculator SciCal.py'
             }
         }
     }
