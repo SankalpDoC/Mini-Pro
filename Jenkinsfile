@@ -33,17 +33,10 @@ pipeline {
         }
 
         stage('Containerize') {
-            environment {
-                DOCKER_HUB_CREDENTIALS = credentials('docker-hub')
-                IMAGE_NAME = 'my-calculator'
-                IMAGE_TAG = sh(script: 'echo $BUILD_ID', returnStdout: true).trim()
-            }
+            
             steps {
                 script {
-                    docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
-                        def app = docker.build("${IMAGE_NAME}:${IMAGE_TAG}", '.')
-                        app.push()
-                    }
+                    sh 'docker build -t incogdark/scientific-calculator:latest .'
                 }
             }
         }
