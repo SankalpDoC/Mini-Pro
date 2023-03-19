@@ -45,7 +45,7 @@ pipeline {
             steps {
                 script {
                     withCredentials([string(credentialsId: 'dockhub-creds', variable: 'dockhub-creds')]) {
-                        sh 'docker login -u incogdark -p ${dockhub-creds}'
+                        sh 'docker login -u incogdark ${dockhub-creds}'
                     }
                     sh 'docker push incogdark/scientific-calculator'
                 }
