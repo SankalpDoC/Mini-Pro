@@ -24,11 +24,11 @@ pipeline {
             steps {
                 sh 'pyinstaller --onefile --name=SciCalculator SciCal.py'
             }
-        }
 
-        post {
-            success {
-                archiveArtifacts artifacts: 'dist/*', allowEmptyArchive: true
+            post {
+                success {
+                    archiveArtifacts artifacts: 'dist/*', allowEmptyArchive: true
+                }
             }
         }
 
