@@ -36,7 +36,8 @@ pipeline {
             
             steps {
                 script {
-                    sh 'docker build -t incogdark/scientific-calculator:latest .'
+                    //sh 'docker build -t incogdark/scientific-calculator:latest .'
+                    image = docker.build "incogdark/scientific-calculator:latest"
                 }
             }
         }
@@ -44,10 +45,14 @@ pipeline {
         stage('Pushing Container to Hub') {
             steps {
                 script {
-                    withCredentials([usernamePassword(credentialsId: 'dock-creds', passwordVariable: 'Dock-Creds_P', usernameVariable: 'Dock-Creds')]) {
+                    /*withCredentials([usernamePassword(credentialsId: 'dock-creds', passwordVariable: 'Dock-Creds_P', usernameVariable: 'Dock-Creds')]) {
                         sh 'docker -t login -u incogdark ${dockhub-creds}'
                     }
-                    sh 'docker push incogdark/scientific-calculator'
+                    sh 'docker push incogdark/scientific-calculator' */
+
+                    docker.withRegistry('',"dock-creds") {
+                        image.push()
+                    }
                 }
             }
         }
