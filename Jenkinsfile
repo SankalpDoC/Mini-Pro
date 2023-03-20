@@ -44,7 +44,7 @@ pipeline {
         stage('Pushing Container to Hub') {
             steps {
                 script {
-                    withCredentials([string(credentialsId: 'dockhub-creds', variable: 'dockhub-creds')]) {
+                    withCredentials([usernamePassword(credentialsId: 'dock-creds', passwordVariable: 'Dock-Creds_P', usernameVariable: 'Dock-Creds')]) {
                         sh 'docker -t login -u incogdark ${dockhub-creds}'
                     }
                     sh 'docker push incogdark/scientific-calculator'
