@@ -65,8 +65,9 @@ pipeline {
                     
                 }
                 //ansiblePlaybook becomeUser: null, colorized: true, disableHostKeyChecking: true, installation: 'Ansible', inventory: 'hosts', playbook: 'playbook.yml', sudoUser: null
-                ansiblePlaybook becomeUser: 'ansi_master', colorized: true, credentialsId: 'ssh-creds', disableHostKeyChecking: true, installation: 'ansible', inventory: 'hosts', playbook: 'playbook.yml'
-                
+                //ansiblePlaybook becomeUser: 'ansi_master', colorized: true, credentialsId: 'ssh-creds', disableHostKeyChecking: true, installation: 'ansible', inventory: 'hosts', playbook: 'playbook.yml'
+                ansiblePlaybook becomeUser: 'ansi_master', colorized: true, credentialsId: 'ssh-creds', disableHostKeyChecking: true, installation: 'ansible', playbook: 'playbook.yml'
+            
             }
         }    
     
