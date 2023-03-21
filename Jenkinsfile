@@ -56,6 +56,16 @@ pipeline {
                 }
             }
         }
+
+        stage('Deployment via Ansible') {
+            steps {
+                script {
+                    
+                    sh 'export LC_ALL=en_IN.UTF-8'
+                    
+                }
+            ansiblePlaybook becomeUser: null, colorized: true, disableHostKeyChecking: true, installation: 'Ansible', inventory: 'hosts', playbook: 'playbook.yml', sudoUser: null
+        }
     }
 
     
