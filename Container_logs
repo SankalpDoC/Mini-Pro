@@ -1,0 +1,97 @@
+Scientific Calculator Menu:
+1. Square Root
+2. Factorial
+3. Natural Logarithm
+4. Power
+5. Exit
+Enter your choice (1-5): 2
+Enter the number to find its factorial: 5
+The factorial of 5 is 120
+Scientific Calculator Menu:
+1. Square Root
+2. Factorial
+3. Natural Logarithm
+4. Power
+5. Exit
+Enter your choice (1-5): 1
+Enter the number to find its square root: 1.7
+The square root of 1.7 is 1.3038404810405297
+Scientific Calculator Menu:
+1. Square Root
+2. Factorial
+3. Natural Logarithm
+4. Power
+5. Exit
+Enter your choice (1-5): 3
+Enter the number to find its natural logarithm: 67
+The natural logarithm of 67.0 is 4.204692619390966
+Scientific Calculator Menu:
+1. Square Root
+2. Factorial
+3. Natural Logarithm
+4. Power
+5. Exit
+Enter your choice (1-5): 4
+Enter the base: 45
+Enter the exponent: 2
+45.0 raised to the power of 2.0 is 2025.0
+Scientific Calculator Menu:
+1. Square Root
+2. Factorial
+3. Natural Logarithm
+4. Power
+5. Exit
+Enter your choice (1-5): 1
+Enter the number to find its square root: -1
+Traceback (most recent call last):
+  File "/app/SciCal.py", line 48, in <module>
+    main()
+  File "/app/SciCal.py", line 27, in main
+    result = square_root(x)
+  File "/app/SciCal.py", line 4, in square_root
+    return math.sqrt(x)
+ValueError: math domain error
+Scientific Calculator Menu:
+1. Square Root
+2. Factorial
+3. Natural Logarithm
+4. Power
+5. Exit
+Enter your choice (1-5): 1
+Enter the number to find its square root: 56
+The square root of 56.0 is 7.483314773547883
+Scientific Calculator Menu:
+1. Square Root
+2. Factorial
+3. Natural Logarithm
+4. Power
+5. Exit
+Enter your choice (1-5): 2
+Enter the number to find its factorial: 21
+The factorial of 21 is 51090942171709440000
+Scientific Calculator Menu:
+1. Square Root
+2. Factorial
+3. Natural Logarithm
+4. Power
+5. Exit
+Enter your choice (1-5): 3
+Enter the number to find its natural logarithm: 209
+The natural logarithm of 209.0 is 5.342334251964811
+Scientific Calculator Menu:
+1. Square Root
+2. Factorial
+3. Natural Logarithm
+4. Power
+5. Exit
+Enter your choice (1-5): 4
+Enter the base: 16
+Enter the exponent: 3
+16.0 raised to the power of 3.0 is 4096.0
+Scientific Calculator Menu:
+1. Square Root
+2. Factorial
+3. Natural Logarithm
+4. Power
+5. Exit
+Enter your choice (1-5): 5
