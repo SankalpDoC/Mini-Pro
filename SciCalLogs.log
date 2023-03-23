@@ -1,0 +1,31 @@
+2023-03-23 12:52:12,104 - DEBUG - User chose option 1
+2023-03-23 12:52:16,854 - INFO - Calculating square root of 79.0
+2023-03-23 12:52:16,854 - INFO - Result: 8.888194417315589
+2023-03-23 12:52:20,496 - DEBUG - User chose option 2
+2023-03-23 12:52:23,013 - INFO - Calculating factorial of 32
+2023-03-23 12:52:23,013 - INFO - Result: 263130836933693530167218012160000000
+2023-03-23 12:52:26,285 - DEBUG - User chose option 3
+2023-03-23 12:52:29,969 - INFO - Calculating natural logarithm of 38843938493.0
+2023-03-23 12:52:29,969 - INFO - Result: 24.382817878240957
+2023-03-23 12:52:33,763 - DEBUG - User chose option 4
+2023-03-23 12:52:39,246 - INFO - Calculating 25.0 raised to the power of 4.0
+2023-03-23 12:52:39,246 - INFO - Result: 390625.0
+2023-03-23 12:52:43,876 - DEBUG - User chose option 2
+2023-03-23 12:52:46,453 - INFO - Calculating factorial of 12
+2023-03-23 12:52:46,453 - INFO - Result: 479001600
+2023-03-23 12:52:50,084 - DEBUG - User chose option 3
+2023-03-23 12:52:56,988 - INFO - Calculating natural logarithm of 3847876552333837.0
+2023-03-23 12:52:56,988 - INFO - Result: 35.88629784620522
+2023-03-23 12:53:04,330 - DEBUG - User chose option 1
+2023-03-23 12:53:06,649 - INFO - Calculating square root of 54.0
+2023-03-23 12:53:06,650 - INFO - Result: 7.3484692283495345
+2023-03-23 12:53:08,806 - DEBUG - User chose option 1
+2023-03-23 12:53:11,281 - INFO - Calculating square root of 729.0
+2023-03-23 12:53:11,282 - INFO - Result: 27.0
+2023-03-23 12:53:14,745 - DEBUG - User chose option 4
+2023-03-23 12:53:19,327 - INFO - Calculating 2.0 raised to the power of 15.0
+2023-03-23 12:53:19,327 - INFO - Result: 32768.0
+2023-03-23 12:53:22,394 - DEBUG - User chose option 5
+2023-03-23 13:07:46,019 - DEBUG - User chose option 2
+2023-03-23 13:07:51,425 - INFO - Calculating factorial of 3
+2023-03-23 13:07:51,425 - INFO - Result: 6
