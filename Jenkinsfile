@@ -16,11 +16,11 @@ pipeline {
             }
         }
 
-        //stage('Run Tests') {
-          //  steps {
-            //    sh 'pytest -v TestSciCal.py'
-            //}
-        //}
+        stage('Run Tests') {
+            steps {
+                sh 'pytest -v TestSciCal.py'
+            }
+        }
 
         stage('Create Executable') {
             steps {
