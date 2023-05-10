@@ -10,8 +10,8 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'python -m venv venv'  // Create a virtual environment
-                sh 'source venv/bin/activate'  // Activate the virtual environment
+                //sh 'python -m venv venv'  // Create a virtual environment
+                //sh 'source venv/bin/activate'  // Activate the virtual environment
                 sh 'pip install -r requirements.txt'  // Install project dependencies
             }
         }
